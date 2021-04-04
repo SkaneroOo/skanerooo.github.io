@@ -1,0 +1,11 @@
+.body {
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.body.dark {
+    background-color: #1a1a1a;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
