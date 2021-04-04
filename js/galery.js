@@ -59,21 +59,3 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-
-function side() {
-    let side = document.getElementById("SideNav");
-    for (i = 1; i < 188; i++) {
-        let item = document.createElement("div");
-        item.className = "item";
-        let pv = document.createElement("img");
-        pv.src = `imgs/jujutsu (${i}).jpg`;
-        pv.setAttribute("onclick", `slideIndex=${i};showSlide(${i})`);
-        pv.loading = "lazy";
-        side.appendChild(item).appendChild(pv);
-        let p = document.createElement("p");
-        p.className = "center";
-        p.innerHTML = i;
-        side.appendChild(p);
-    }
-}
